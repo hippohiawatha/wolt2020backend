@@ -9,8 +9,17 @@ isNear = (rest, coords) => {
   return haversine(coords, location, {threshold: 3})
 }
 
-locate = (filtered, coords) => {
-  return filtered.filter(rest => isNear(rest, coords))
+locate = (filtered, lat, lon) => {
+
+  lat = lat !== '' ? lat : NaN
+  lon = lon !== '' ? lon : NaN
+  const coords = {
+    latitude: lat,
+    longitude: lon
+  }
+  if(!isNaN(coords.latitude) && !isNaN(coords.longitude)){
+    return filtered.filter(rest => isNear(rest, coords))
+  }
 }
 
 module.exports = locate

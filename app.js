@@ -12,17 +12,24 @@ app.get('/restaurants', (req, res) => {
 })
 
 app.get('/restaurants/search', function(req, res) {
-  const tag = req.query.q
-  const coords = {
-    latitude : req.query.lat,
-    longitude : req.query.lon
+
+  if(req.query.q) {
+    const filtered = search(req.query.q)
+
+  if(filtered.length < 1)
+    res.status(404).send('No restaurant matches your search!')
+    else {
+      if(req.query.lat || req.query.lon){
+        const nearBy = locate(filtered, req.query.lat, req.query.lon)
+        
+        !nearBy ? res.status(404).send('Please enter proper coordinates!') :
+        nearBy.length > 0 ? res.json(nearBy) :
+        res.status(404).send('No restaurant within 3km!')
+      }
+      else res.json(filtered)
+    }
   }
-  const filtered = search(tag)
-  const nearBy = locate(filtered, coords)
-
-  filtered.length < 1 ? res.send('No restaurant matches your search') :
-  nearBy.length < 1 ? res.send('No restaurants within 3km') : res.json(nearBy)
-
+  else res.status(404).send('Please give search query parameters')
 })
 
 module.exports = app
