@@ -14,6 +14,6 @@ My take on the backend task
 
 #### ¡don't forget to start the thing!
 
-http://localhost:3003/restaurants will give you a list of all the restaurants currently in the system
-http://localhost:3003/restaurants/search?q=xxx will give you a list of restaurants matching given 'xxx'
-http://localhost:3003/restaurants/search?q=xxx&lat=yyy&lon=zzz will give you a list of restaurants that match given 'xxx' and are within 3km from the given coordinates 'yyy' and 'zzz'
+- http://localhost:3003/restaurants will give you a list of all the restaurants currently in the system
+- http://localhost:3003/restaurants/search?q=xxx will give you a list of restaurants matching given 'xxx'
+- http://localhost:3003/restaurants/search?q=xxx&lat=yyy&lon=zzz will give you a list of restaurants that match given 'xxx' and are within 3km from the given coordinates 'yyy' and 'zzz'
