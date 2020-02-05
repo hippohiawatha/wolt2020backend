@@ -2,15 +2,15 @@
 
 My take on the backend task
 
-## Getting it started:
+## Getting it started
 
-Fork it or zip it!
-In console; navigate to the codes folder
-npm install to get the hottest dependencies!
-npm run watch || npm start will run the api locally.
-npm test will run the tests.
+1.Fork it or zip it!
+2.In console; navigate to the codes folder
+3.npm install to get the hottest dependencies!
+4.npm run watch || npm start will run the api locally.
+5.npm test will run the tests.
 
-## Using the API:
+## Using the API
 
 ### ¡don't forget to start the thing!
 
