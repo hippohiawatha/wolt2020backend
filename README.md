@@ -1,8 +1,8 @@
-##Summer 2020 Internships - Engineering Pre-assignment
+Summer 2020 Internships - Engineering Pre-assignment
 
 My take on the backend task
 
-###Getting it started:
+Getting it started:
 
 Fork it or zip it! 
 In console; navigate to the codes folder
@@ -10,9 +10,9 @@ npm install to get the hottest dependencies!
 npm run watch || npm start will run the api locally.
 npm test will run the tests.
 
-###Using the API:
+Using the API:
 
-####¡don't forget to start the thing!
+¡don't forget to start the thing!
 
 http://localhost:3003/restaurants will give you a list of all the restaurants currently in the system
 http://localhost:3003/restaurants/search?q=xxx will give you a list of restaurants matching given 'xxx'
