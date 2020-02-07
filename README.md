@@ -4,11 +4,10 @@ My take on the backend task
 
 ## Getting it started
 
-1. Fork it or zip it!
-2. In console; navigate to the codes folder
-3. npm install to get the hottest dependencies!
-4. npm run watch || npm start will run the api locally.
-5. npm test will run the tests.
+- In console; navigate to the project folder
+- npm install to get the hottest dependencies!
+- npm run watch || npm start will run the api locally.
+- npm test will run the tests.
 
 ## Using the API
 
