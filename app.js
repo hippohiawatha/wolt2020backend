@@ -21,7 +21,7 @@ app.get('/restaurants/search', function(req, res) {
     else {
       if(req.query.lat || req.query.lon){
         const nearBy = locate(filtered, req.query.lat, req.query.lon)
-        
+
         !nearBy ? res.status(404).send('Please enter proper coordinates!') :
         nearBy.length > 0 ? res.json(nearBy) :
         res.status(404).send('No restaurant within 3km!')
