@@ -4,6 +4,7 @@ My take on the backend task
 
 ## Getting it started
 
+- Clone it or zip it!
 - In console; navigate to the project folder
 - npm install to get the hottest dependencies!
 - npm run watch || npm start will run the api locally.
